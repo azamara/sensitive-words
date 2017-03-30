@@ -1,0 +1,33 @@
+{
+  "name": "sensitive-words",
+  "version": "1.0.0",
+  "description": "Filter out a list of sensitive works",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel src -d build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": ["latest"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azamara/sensitive-words.git"
+  },
+  "keywords": [
+    "filter",
+    "filtering",
+    "sensitive",
+    "words"
+  ],
+  "author": "William",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azamara/sensitive-words/issues"
+  },
+  "homepage": "https://github.com/azamara/sensitive-words#readme",
+  "devDependencies": {
+    "babel-cli": "6.18.0",
+    "babel-preset-latest": "6.16.0"
+  }
+}
