@@ -1,1 +1,3 @@
-export default () => 'hello universe'
+export default (content, words) => (
+  content.replace(new RegExp(words.join('|'), 'ig'), '***')
+)

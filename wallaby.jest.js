@@ -1,4 +1,4 @@
-module.exports = function () {
+module.exports = function (wallaby) {
 
   return {
     files: [
@@ -10,18 +10,15 @@ module.exports = function () {
 
     env: {
       type: 'node',
-      runner: 'node',
-      params: {
-        runner: '--harmony'
-      }
+      runner: 'node'
     },
 
-    testFramework: 'jest'
+    compilers: {
+      "**/*.js": wallaby.compilers.babel()
+    },
 
-    //setup: function (wallaby) {
-    //  wallaby.testFramework.configure({
-    //    // https://facebook.github.io/jest/docs/api.html#config-options
-    //  });
-    //}
+    testFramework: 'jest',
+
+    debug: true
   };
 };
